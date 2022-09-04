@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="header">
+    <a href="./homepage.html" class="anchor">HOME</a>
+    <a href="/" class="anchor">STORE</a>
+    <a href="./about.html" class="anchor">ABOUT</a>
+    <button class="seecart" id="mycart">Cart</button>
+</div>
+<div class="subHeader">
+  <h1>Mobile </h1>
+</div>
+<div>
+  <h3 class="bike">Sports Bikes</h3>
+  <div class="row1">
+    <div class="albums">
+      <h3 class="title">Yamaha R15 V4</h3>
+      <img
+        class="images"
+        src="https://th.bing.com/th/id/OIP.obPrQvrV2rUbbBqFTSNP8gHaFG?w=254&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+        alt="Yamaha R15 V4"
+      />
+      <div class="price">
+        <h4 class="amount">250$</h4>
+        <button class="addcart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="albums">
+      <h3 class="title">Suzuki Hayabusa</h3>
+      <img
+        class="images"
+        src="https://www.bing.com/th?id=OIP.UA2O7TQzEBSchGJFaV39UgHaEj&w=201&h=130&c=2&rs=1&qlt=80&o=6&cdv=1&dpr=1.25&pid=16.1"
+        alt="Album 2"
+      />
+      <div class="price">
+        <h4 class="amount">300$</h4>
+        <button class="addcart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="row1">
+    <div class="albums">
+      <h3 class="title">Kawasaki Ninja 1000SX</h3>
+      <img
+        class="images"
+        src="https://th.bing.com/th/id/OIP.Xp73l3OyHqfkp9af5mAF6gHaFj?w=287&h=216&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+        alt="Kawasaki Ninja 1000SX"
+      />
+      <div class="price">
+        <h4 class="amount">350$</h4>
+        <button class="addcart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="albums">
+      <h3 class="title">Honda CBR 1000RR</h3>
+      <img
+        class="images"
+        src="https://th.bing.com/th/id/OIP.f9yCKEyEaiOTqX_ly1J_TgHaEH?w=331&h=184&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+        alt="Honda CBR 1000RR"
+      />
+      <div class="price">
+        <h4 class="amount">275$</h4>
+        <button class="addcart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h3 class="bike">Adventure Bikes</h3>
+    <div class="row1">
+      <div class="albums">
+        <h3 class="title">RE Himalayan</h3>
+        <img
+          class="images"
+          src="https://th.bing.com/th/id/OIP.qzd4e1jsKH2QguLDG0XlpQHaE7?w=275&h=183&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+          alt="RE Himalayan"
+        />
+        <div class="price">
+          <h4 class="amount">100$</h4>
+          <button class="addcart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="albums">
+        <h3 class="title">Triumph Tiger</h3>
+        <img
+          class="images"
+          src="https://th.bing.com/th/id/OIP.RqbL50ANRxfadqgCIDZqmAHaFj?w=270&h=203&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+          alt="Triumph Tiger"
+        />
+        <div class="price">
+          <h4 class="amount">400$</h4>
+          <button class="addcart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="cart">
+    <button id="cartbtn" class="seecart">See the cart</button>
+</div>
+
+    <!-- Cart-HTML -->
+
+    <div class="popup-container" id="container">
+        <div class="popup">
+          <section class="container">
+            <h2 class="section-header">CART</h2>
+            <button id="close">&times;</button>
+            <div class="cart-row">
+              <span class="cart-item cart-header cart-column">ITEM</span>
+              <span class="cart-price cart-header cart-column">PRICE</span>
+              <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+              <div class="cart-row">
+                <div class="cart-item cart-column">
+                    
+                  <img
+                    class="cart-item-image"
+                    src="https://th.bing.com/th/id/OIP.obPrQvrV2rUbbBqFTSNP8gHaFG?w=254&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+                    width="100"
+                    height="100"
+                  />
+                  <span class="cart-item-title">Yamaha R15 V4</span>
+                </div>
+                <span class="cart-price cart-column">$250</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1" />
+                <button class="btn btn-danger" type="button">REMOVE</button>
+              </div>
+            </div>
+            <div class="cart-row">
+              <div class="cart-item cart-column">
+                <img
+                class="cart-item-image"
+                src="https://th.bing.com/th/id/OIP.RqbL50ANRxfadqgCIDZqmAHaFj?w=270&h=203&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+                width="100"
+                height="100"
+              />
+              <span class="cart-item-title">Triumph Tiger</span>
+            </div>
+            <span class="cart-price cart-column">$400</span>
+            <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="2" />
+                <button class="btn btn-danger" type="button">REMOVE</button>
+              </div>
+            </div>
+          </div>
+          <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$650</span>
+          </div>
+          <button class="btn btn-primary btn-purchase" type="button">
+            PURCHASE
+          </button>
+        </section>
+      </div>
+    </div>
+    <br />
+
+    <!-- footer -->
+
+    <div class="footer">
+      <div class="footer1"><h1>The Biker Zone</h1></div>
+      <div class="footer2">
+        <ul class="footer2">
+          <a href="https://www.youtube.com">
+            <img
+              src="https://www.bing.com/th?id=OIP.3yLsbW3kJ5zU9-957TR_mQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2"
+              alt="Youtube"
+              height="25px"
+              width="25px"
+            />
+          </a>
+          <a href="https://spotify.com">
+            <img
+            src="https://www.bing.com/th?id=OIP.Lrxsd7qE1xlNSo9qczRXHgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2"
+            alt="Spotify"
+            height="25px"
+            width="25px"
+          />
+        </a>
+        <a href="https://facebook.com">
+          <img
+            src="https://www.bing.com/th?id=OIP.bOdxtMx_BX8ICFq2szS3HwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2"
+            alt="facebook"
+            height="25px"
+            width="25px"
+          />
+        </a>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
